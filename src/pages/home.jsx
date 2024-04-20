@@ -3,18 +3,21 @@ import Hero from "../components/hero";
 import './homeStyles.css'
 import OneCard from "../components/OneCard";
 import AllCards from "../components/AllCards";
+import Input from "../components/Input";
+import Footer from "../components/Footer";
 
 function Home(){
 
     return (
     <div className="container">
         <Navbar />
-        <Hero />
-          <div style={{display:'flex',justifyContent:'center',flexWrap:'wrap',paddingBottom:'20px'}}>
-    <AllCards/>
+        <Hero />          
+        <AllCards/>
+        <Input/>
+        <Footer/>
+        
   </div> 
         
-    </div>
 
     )
 

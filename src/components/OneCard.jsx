@@ -1,23 +1,24 @@
 import React from 'react';
 import './OneCard.css'; // Import the CSS file
 
-function OneCard() {
+function OneCard(props) {
+  const { imageUrl, title, text, buttonText } = props; // Destructure props
+
   return (
     <div className="card">
       <img 
-        src='src/assets/Volunteering-bro.svg' 
+        src={imageUrl} // Use the imageUrl prop
         className="card-image" // Add class name for card image
         alt='...'
       />
       <div className="card-body">
-        <h5 className="card-title">Join our community in creating a more sustainable future for everyone</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
-        <a href='#' className="card-button">Button</a>
+        <h5 className="card-title">{title}</h5> {/* Use the title prop */}
+        <p className="card-text">{text}</p> {/* Use the text prop */}
+        <a href='#' className="card-button">{buttonText}</a> {/* Use the buttonText prop */}
       </div>
     </div>
   );
 }
 
 export default OneCard;
+

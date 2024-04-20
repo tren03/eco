@@ -1,0 +1,27 @@
+.input-container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+  }
+  
+  .input-container input {
+    margin-right: 10px; /* Add some space between input and button */
+  }
+
+  .input-wrapper{
+    margin-bottom: 20px;
+    
+  }
+  p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+ .button-wrapper{
+    margin-bottom: 80px;
+ }
