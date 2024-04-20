@@ -8,7 +8,8 @@ import { Box } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box
+    <div>
+        <Box
       component="footer"
       sx={{
         backgroundColor: (theme) =>
@@ -80,5 +81,11 @@ export default function Footer() {
         </Grid>
       </Container>
     </Box>
+    <div className="final-footer" style={{backgroundColor:'black',color:'white',textAlign:"center", padding:'4px',fontSize:'20px'}}>
+        © 2023 - 2024, Ecoyaan<sup>TM</sup>
+
+    </div>
+    </div>
+    
   );
 }

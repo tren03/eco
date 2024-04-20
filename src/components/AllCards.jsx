@@ -7,7 +7,8 @@ export default function MyComponent() {
                 <OneCard
                     imageUrl="src/assets/Volunteering-bro.svg"
                     title="Join our community in creating a more sustainable future for everyone"
-                    text="At Ecoyaan, we're your sustainable community hub, offering insights on climate, policy updates, and lifestyle tips to reduce your environmental footprint"
+                    text="
+                    At Ecoyaan, we're your sustainable community, providing insights on climate, policy updates, and lifestyle tips to reduce your environmental footprint."
                     buttonText="About us"
                 />
                 <OneCard

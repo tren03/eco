@@ -8,7 +8,7 @@ function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            if (scrollPosition > window.innerHeight / 2) {
+            if (scrollPosition > window.innerHeight / 3) {
                 setScrollBackground(true);
             } else {
                 setScrollBackground(false);
