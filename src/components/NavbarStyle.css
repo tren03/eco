@@ -1,6 +1,7 @@
 /* Navbar styles */
 nav {
-    padding: 2%;
+    padding-top:2%;
+    padding-bottom: 1%;
     background-color: rgba(255, 255, 255, 0); /* Set the background color with opacity */
     display: flex;
     align-items: center;
@@ -29,16 +30,17 @@ ul {
 /* Logo styles */
 .logo {
     padding-left: 2%;
-    font-size: 35px;
-    color: green;
+    font-size: 45px;
+    color: rgb(0, 255, 0);
     font-weight: bold;
 }
 
 #navbar li a {
+    
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -46,7 +48,7 @@ ul {
     content: "";
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -130,7 +132,7 @@ ul{
 
 #overlay-ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 20px;
     font-weight: 500;
     font-size: 1.3rem;
@@ -147,5 +149,21 @@ ul{
     margin-bottom: 10px; /* Adjust spacing as needed */
     padding: 20px; /* Add padding around the close icon */
 }
+.scroll-background nav {
+    background: rgb(245,245,245) /* Your desired background gradient or color */;
+    
+}
+.scroll-background nav {
+    background: rgb(245, 245, 245); /* Your desired background gradient or color */
+}
+
+.scroll-background nav #navbar li a {
+    color: black; /* Change the color of anchor tags to black */
+}
+
+.scroll-background nav #navbar li a::after {
+    background-color: black; /* Change the color of the underline to black */
+}
+
 
 
