@@ -1,0 +1,14 @@
+/* homeStyles.css */
+.container {
+    position: relative; /* Ensure the container is positioned relative */
+  }
+  
+.container .navWrapper {
+    position: fixed; /* Position navbar fixed to stay on top */
+    width: 100%; /* Full width */
+    z-index: 2; /* Ensure the navbar is above the hero */
+  }
+  
+
+  /* Other styles as needed */
+  

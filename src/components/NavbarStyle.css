@@ -1,0 +1,151 @@
+/* Navbar styles */
+nav {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0); /* Set the background color with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+    
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    padding-right: 5%;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Logo styles */
+.logo {
+    padding-left: 2%;
+    font-size: 35px;
+    color: green;
+    font-weight: bold;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+    position: relative;
+}
+
+#navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease, left 0.3s ease; /* Add transition for smooth effect */
+}
+
+#navbar li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Remove the line when not hovering */
+#navbar li a:not(:hover)::after {
+    width: 0;
+}
+
+/* Hide anchor tags in navbar for smaller screens */
+@media screen and (max-width: 768px) {
+    #navbar li a {
+        display: none;
+    }
+}
+
+/* Hamburger icon styles */
+#mobile {
+    display: none;
+}
+
+/* Show hamburger icon for smaller screens */
+@media screen and (max-width: 768px) {
+    #mobile {
+        display: block;
+        font-size: 1.5em;
+        padding-right: 5%;
+    }
+}
+
+/* Overlay panel styles */
+.overlay-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the panel appears above other content */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition for smooth effect */
+}
+
+.overlay-panel.show {
+    visibility: visible; /* Show panel */
+    opacity: 1;
+}
+
+.panel-content {
+    position: absolute;
+    top: 0;
+    right: 0; /* Initially fully visible on the right */
+    height: 100%;
+    width: 30%; /* Adjust the width as needed */
+    background-color: white;
+    transition: right 0.3s ease; /* Transition the right property */
+}
+
+.panel-content.show {
+    right: 0%; /* Slide the panel to the left (adjust as needed) */
+}
+ul{
+    list-style-type: none;
+}
+
+#overlay-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+#overlay-ul a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease;
+
+    display: block; /* Ensure each anchor takes up the full width */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 10px; /* Add space between anchors */
+}
+
+
+#close-icon {
+    cursor: pointer;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    padding: 20px; /* Add padding around the close icon */
+}
+
+
