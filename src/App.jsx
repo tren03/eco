@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/hero'
 import Home from './pages/home'
+import About from './pages/about'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -15,7 +16,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Home/>
+    <About/>
+    // <Home/>
   )
 }
 
