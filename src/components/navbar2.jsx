@@ -10,7 +10,7 @@ function Navbar2() {
 
     return (
         <div className="navWrapper"> {/* Ensure that the navWrapper class is applied */}
-            <nav>
+            <navv>
                 <span className="logo">
                     Ecoyaan
                 </span>
@@ -23,7 +23,7 @@ function Navbar2() {
                 <div id="mobile" onClick={toggleMenu}>
                     <i id="bar" className={clicked ? '' : 'fas fa-bars'}></i>
                 </div>
-            </nav>
+            </navv>
             {/* Overlay panel */}
             <div className={`overlay-panel ${clicked ? 'show' : ''}`}>
                 {/* Panel content */}

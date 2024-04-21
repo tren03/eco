@@ -1,0 +1,33 @@
+.action-area-card {
+    transition: transform 0.3s; /* Apply CSS transition for scaling */
+  }
+  
+  .action-area-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .card-action-area {
+    width: 400px; /* Set the width */
+  }
+  
+  .card-media {
+    padding: 10px; /* Add padding */
+    object-fit: cover; /* Make the image fit inside the container */
+  }
+  
+  .card-content {
+    height: 30%; /* Set the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+  }
+  
+  .card-title {
+    text-align: center; /* Center align the title */
+    font-size: 1.8rem;
+  }
+  
+  .card-description {
+    font-size: 1.2rem;
+  }
+  

@@ -1,28 +1,46 @@
-.wrapper{
-    margin-top: 110px;
-    height: 500px;
-    background-color: aliceblue;
-    display: flex;
+.wrapper {
+  margin-top: 110px;
+  height: 10%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column; /* Start with a column layout */
 }
+
 .text {
-    padding: 2%;
-    flex: 1;
-    
+  padding: 2%;
+  flex-grow: 1; /* Allow the text to grow to fill the available space */
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.img img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  max-height: 80%; /* Ensure the image does not exceed the container height */
+}
+
+p {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+      flex-direction: row; /* Change to a row layout for larger screens */
+      align-items: stretch; /* Stretch both items to fill the height */
+  }
+
+  .text {
+      flex-basis: 50%; /* Take up 50% of the container width */
+      order: 2; /* Move the text below the image */
   }
 
   .img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      margin: 1%;
+      flex-basis: 50%; /* Take up 50% of the container width */
+      order: 1; /* Move the image above the text */
   }
-  
-  .img img {
-    max-width: 100%; /* Ensure the image does not exceed the container width */
-    max-height: 80%; /* Ensure the image does not exceed the container height */
-  }
-  
-  
-p{
-    font-size: 25px;
 }

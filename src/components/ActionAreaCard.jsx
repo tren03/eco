@@ -1,29 +1,36 @@
-
-
-import * as React from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import './ActionAreaCard.css'; // Import CSS file for styling
 
-export default function ActionAreaCard() {
+export default function ActionAreaCard({ title, description, imageUrl, maxWidth, maxHeight, margin }) {
   return (
-    <Card sx={{ maxWidth: 345, maxHeight: 200 }}>
-      <CardActionArea>
+    <Card
+      sx={{
+        maxWidth: maxWidth || 345,
+        maxHeight: maxHeight || '600px',
+        margin: margin || 5,
+        fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
+        display: 'flex',
+      }}
+      className="action-area-card" // Apply CSS class for styling
+    >
+      <CardActionArea className="card-action-area">
         <CardMedia
           component="img"
-          height="140"
-          image="src/assets/Environmental audit-pana.svg"
-          alt="green iguana"
+          image={imageUrl || "src/assets/placeholder-image.png"}
+          alt={title || "Image"}
+          className="card-media"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
+        <CardContent className="card-content">
+          <Typography gutterBottom variant="h5" component="div" className="card-title">
+            {title || "Title"} 
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body2" color="text.secondary" className="card-description">
+            {description || "Description"} 
           </Typography>
         </CardContent>
       </CardActionArea>

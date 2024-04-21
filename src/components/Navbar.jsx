@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './NavbarStyle.css';
 
 function Navbar() {
-    const [clicked, setClicked] = useState(false); // State for managing click event
-    const [scrollBackground, setScrollBackground] = useState(false); // State for managing scroll background
+    const [clicked, setClicked] = useState(false);
+    const [scrollBackground, setScrollBackground] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            if (scrollPosition > window.innerHeight / 3) {
+            if (scrollPosition > window.innerHeight / 2) { // Change here to window.innerHeight / 2
                 setScrollBackground(true);
             } else {
                 setScrollBackground(false);
