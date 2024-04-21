@@ -1,0 +1,74 @@
+.wrapper-3 {
+  background-color: aliceblue;
+  height: auto; /* Adjusted height to fit the content */
+  padding: 25px;
+}
+
+.heading-3 {
+  text-align: center;
+}
+
+.person-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: center; /* Center items horizontally */
+}
+
+.founder-row,
+.team-row {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+
+
+
+.founder-text a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(0, 245, 0);
+  position: relative;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.founder-text a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease, left 0.3s ease; /* Add transition for smooth effect */
+}
+
+.founder-text a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Remove the line when not hovering */
+.founder-text a:not(:hover)::after {
+  width: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .founder-row,
+  .team-row {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .person {
+    margin: 20px 0; /* Adjust margin for stacked items */
+  }
+}
+
+.founder-text {
+  width: 70%;
+  text-align: center;
+  margin: auto; /* Center the element horizontally */
+  padding-top: 20px; /* Add some space above the text */
+}
