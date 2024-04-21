@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './NavbarStyle.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [clicked, setClicked] = useState(false);
@@ -34,8 +35,8 @@ function Navbar() {
                 </span>
                 <div>
                     <ul id="navbar">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     </ul>
                 </div>
                 <div id="mobile" onClick={toggleMenu}>
@@ -52,8 +53,8 @@ function Navbar() {
                     </div>
                     {/* Anchor links */}
                     <ul id="overlay-ul">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     </ul>
                 </div>
             </div>

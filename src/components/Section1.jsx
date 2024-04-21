@@ -5,7 +5,7 @@ function Section1() {
   return (
     <div className='wrapper'>
       <div className='text'>
-        <h1>About Ecoyaan</h1>
+        <h1 style={{marginTop:'40px'}}>About Ecoyaan</h1>
         <p style={{textAlign:'left'}}>
           At Ecoyaan, we are more than just a platform. Our goal is to build a community of eco-conscious people who share a common vision and passion for a more sustainable world.
           <br/><br/>

@@ -29,7 +29,7 @@ export default function ActionAreaCard({ title, description, imageUrl, maxWidth,
           <Typography gutterBottom variant="h5" component="div" className="card-title">
             {title || "Title"} 
           </Typography>
-          <Typography variant="body2" color="text.secondary" className="card-description">
+          <Typography variant="body5" color="text.secondary" className="card-description" align="center">
             {description || "Description"} 
           </Typography>
         </CardContent>
