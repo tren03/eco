@@ -19,7 +19,7 @@ function Section1() {
         </p>
       </div>
       <div className='img'>
-  <img src='src/assets/tree-4857597_1280.png' alt='Tree Image' />
+  <img src='/assets/tree-4857597_1280.png' alt='Tree Image' />
 </div>
 
     </div>
