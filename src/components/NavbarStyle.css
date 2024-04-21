@@ -1,7 +1,6 @@
 /* Navbar styles */
 nav {
-    padding-top:2%;
-    padding-bottom: 1%;
+    padding-top:8px;
     background-color: rgba(255, 255, 255, 0); /* Set the background color with opacity */
     display: flex;
     align-items: center;
@@ -150,11 +149,11 @@ ul{
     padding: 20px; /* Add padding around the close icon */
 }
 .scroll-background nav {
-    background: rgb(245,245,245) /* Your desired background gradient or color */;
+    background: rgb(255, 255, 255) /* Your desired background gradient or color */;
     
 }
 .scroll-background nav {
-    background: rgb(245, 245, 245); /* Your desired background gradient or color */
+    background: rgb(255, 255, 255); /* Your desired background gradient or color */
 }
 
 .scroll-background nav #navbar li a {

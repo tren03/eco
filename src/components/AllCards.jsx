@@ -23,7 +23,7 @@ export default function MyComponent() {
                     title="For businesses that care deeply about sustainability"
                     text="
                     Connect with eco-conscious consumers by showcasing your sustainable business on our platform. Contact us today to join our community of ethical and innovative brands."
-                    buttonText="Get in touch"
+                    buttonText="Contact Us"
                 />
 
             </div>
